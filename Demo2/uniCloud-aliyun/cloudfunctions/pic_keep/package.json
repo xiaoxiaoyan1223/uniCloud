@@ -1,0 +1,7 @@
+{
+  "name": "pic_keep",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
