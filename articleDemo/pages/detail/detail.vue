@@ -12,6 +12,9 @@
 			<view class="content">
 				{{detail.content}}
 			</view>
+			<view class="picurls" v-if="detail.picurls&&detail.picurls.length">
+				<image v-for="item in detail.picurls"  :src="item" mode="widthFix"></image>
+			</view>
 			<view class="butGroup">
 				<button size="mini" @click="goEdit">
 					<uni-icons type="compose" size="20"></uni-icons>
@@ -129,6 +132,13 @@
 		.content {
 			font-size: 36rpx;
 			line-height: 1.7em;
+		}
+		.picurls{
+			image{
+				width: 100%;
+				display: block;
+				margin-bottom: 30rpx;
+			}
 		}
 
 		.butGroup {
